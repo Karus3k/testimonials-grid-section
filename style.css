@@ -129,6 +129,7 @@ h1 {
 }
 .title {
   opacity: 50%;
+  margin-left: 12px;
 }
 h2 {
   margin: 16px auto;
