@@ -1,0 +1,184 @@
+:root {
+  --color-Violet: hsl(263, 55%, 52%);
+  --color-DarkGrayishBlue: hsl(217, 19%, 35%);
+  --color-DarkBlackishBlue: hsl(219, 29%, 14%);
+  --color-White: hsl(0, 0%, 100%);
+
+  --color-LightGray: hsl(0, 0%, 81%);
+  --color-LightGrayishBlue: hsl(210, 46%, 95%);
+}
+* {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.root {
+  align-items: center;
+  background-color: var(--color-LightGrayishBlue);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  padding: auto;
+  width: 100vw;
+}
+.grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "one"
+    "two"
+    "tree"
+    "four"
+    "five";
+  max-height: 80%;
+  max-width: 90%;
+}
+section {
+  border-radius: 12px;
+  padding: 24px;
+}
+.PersonInf {
+  display: flex;
+  justify-content: flex-start;
+}
+.Daniel-Clifford {
+  background-color: var(--color-Violet);
+  color: var(--color-LightGrayishBlue);
+  grid-area: one;
+}
+.Daniel-Clifford .avatar {
+  aspect-ratio: 1 / 1;
+  background-image: url("./images/image-daniel.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  flex: 1;
+  max-height: 33px;
+  max-width: 33px;
+}
+.Jonathan-Walters {
+  background-color: var(--color-DarkGrayishBlue);
+  color: var(--color-White);
+  grid-area: two;
+}
+.Jonathan-Walters .avatar {
+  aspect-ratio: 1 / 1;
+  background-image: url("./images/image-jonathan.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  flex: 1;
+  max-height: 33px;
+  max-width: 33px;
+}
+.Jeanette-Harmon {
+  background-color: var(--color-White);
+  color: var(--color-DarkBlackishBlue);
+  grid-area: tree;
+}
+.Jeanette-Harmon .avatar {
+  aspect-ratio: 1 / 1;
+  background-image: url("./images/image-jeanette.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  flex: 1;
+  max-height: 33px;
+  max-width: 33px;
+}
+.Patrick-Abrams {
+  background-color: var(--color-DarkBlackishBlue);
+  color: var(--color-LightGray);
+  grid-area: four;
+}
+.Patrick-Abrams .avatar {
+  aspect-ratio: 1 / 1;
+  background-image: url("./images/image-patrick.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  flex: 1;
+  max-height: 33px;
+  max-width: 33px;
+}
+.Kira-Whittle {
+  background-color: var(--color-White);
+  color: var(--color-DarkBlackishBlue);
+  grid-area: five;
+}
+.Kira-Whittle .avatar {
+  aspect-ratio: 1 / 1;
+  background-image: url("./images/image-kira.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  flex: 1;
+  max-height: 33px;
+  max-width: 33px;
+}
+h1 {
+  font-size: 12px;
+  margin-left: 12px;
+}
+.title {
+  opacity: 50%;
+}
+h2 {
+  margin: 16px auto;
+}
+p {
+  font-size: 13px;
+  opacity: 70%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 450px) {
+  .grid {
+    display: grid;
+    gap: 12px;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+      "one one"
+      "two five"
+      "tree five"
+      "four four";
+    max-height: 80%;
+    max-width: 80%;
+  }
+  section {
+    border-radius: 12px;
+    padding: 24px;
+    min-width: 150px;
+  }
+}
+@media (min-width: 900px) {
+  .grid {
+    display: grid;
+    gap: 12px;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+      "one one two five"
+      "tree four four five";
+    max-height: 80%;
+    max-width: 80%;
+  }
+  section {
+    border-radius: 12px;
+    padding: 24px;
+    min-width: 150px;
+  }
+}
